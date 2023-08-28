@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Proyecto con JavaScript</title>
+    <!-- JQuery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 </head>
 
 <body>
@@ -26,7 +32,13 @@
                 </ul>
             </nav>
         </header>
-        <div id="slider"></div>
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="/img/imagen1.jpg" /></div>
+                <div><img src="/img/imagen2.jpg" /></div>
+                <div><img src="/img/imagen3.jpg" /></div>
+            </div>
+        </div>
         <section id="content">
             <div id="post">
                 <article class="post">
@@ -95,7 +107,7 @@
     <footer>
         Curso de JavaScript
     </footer>
-    <script src="/js/main.js"></script>
+    <script type="text/JavaScript" src="/js/main.js"></script>
 </body>
 
 </html>
