@@ -149,7 +149,7 @@ aside {
     text-align: justify;
 }
 
-#formulario *:not([type="submit"]) {
+form *:not([type="submit"]) {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
