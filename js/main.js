@@ -65,15 +65,24 @@ $(document).ready(function () {
     let theme = $("#theme");
 
     $("#to-green").click(function () {
-        theme.attr("href", "css/green.css")
+        theme.attr("href", "/css/green.css")
     });
 
     $("#to-red").click(function () {
-        theme.attr("href", "css/red.css")
+        theme.attr("href", "/css/red.css")
     });
 
     $("#to-blue").click(function () {
-        theme.attr("href", "css/blue.css")
+        theme.attr("href", "/css/blue.css")
+    });
+
+    //scroll subir arriba
+    $(".subir").click(function (e) {
+        e.preventDefault();
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
     });
 
 });
