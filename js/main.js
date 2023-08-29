@@ -85,4 +85,28 @@ $(document).ready(function () {
         return false;
     });
 
+    //El login falso con localstorage
+    $("#login form").submit(function () {
+        let form_name = $("#nm").val();
+        localStorage.setItem("userData", form_name);
+    });
+
+    let userData = localStorage.getItem("userData");
+    
+    if (userData != null || userData != undefined) {
+        let about_parrafo = $("#about p");
+
+        about_parrafo.html("<br><strong>Bienvenido, " + userData + "</strong>");
+        about_parrafo.append("<a href='#' id='logout'>Cerrar sesión</a>");
+
+        $("#logout").click(function(){
+            localStorage.clear();
+            location.reload();
+        });
+
+        $("#login").hide();
+    }
+
+
+
 });
