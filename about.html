@@ -10,15 +10,14 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link id="theme" rel="stylesheet" type="text/css" href="/css/blue.css">
 
-    <title>Proyecto con JavaScript</title>
-
-    <!-- JQuery -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-
-    <!-- slider -->
+    <!-- JQuery UI -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
 
+    <title>Proyecto con JavaScript</title>
 </head>
 
 <body>
@@ -43,21 +42,37 @@
                 </ul>
             </nav>
         </header>
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="/img/imagen1.jpg" /></div>
-                <div><img src="/img/imagen2.jpg" /></div>
-                <div><img src="/img/imagen3.jpg" /></div>
-            </div>
         </div>
         <section id="content">
-            <div id="post">
-                <article class="post">
-
+            <div id="box">
+                <!-- cargar acordeón -->
+                <h2>Sobre mí</h2>
+                <div id="acordeon">
+                    <h3>¿Quiénes somos?</h3>
                     <div>
-                        <a class="button-more" href="#">Leer mas</a>
+                        <p>
+                            Somos un equipo apasionado que fusiona creatividad y tecnología para dar vida a soluciones
+                            digitales innovadoras y cautivadoras. Nuestro objetivo es crear experiencias que conecten y
+                            inspiren.
+                        </p>
                     </div>
-                </article>
+                    <h3>Nuestros servicios</h3>
+                    <div>
+                        <p>
+                            Ofrecemos un conjunto diverso de servicios que abarcan desde diseño web y desarrollo de
+                            aplicaciones hasta estrategias de marketing digital. Nos esforzamos por brindar soluciones
+                            integrales que impulsen el éxito en línea de nuestros clientes.
+                        </p>
+                    </div>
+                    <h3>Nuestros clientes</h3>
+                    <div>
+                        <p>
+                            Colaboramos con una amplia gama de clientes, desde startups ambiciosas hasta empresas
+                            consolidadas. Nuestra base de clientes representa diversos sectores y confía en nosotros
+                            para transformar sus ideas en realidades digitales excepcionales.
+                        </p>
+                    </div>
+                </div>
             </div>
             <aside id="aside">
                 <div id="about">
@@ -91,8 +106,8 @@
         <a class="subir" href="#">Ir arriba</a>
     </footer>
     <script type="text/JavaScript" src="/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es-mx.min.js"></script>
+
+
 </body>
 
 </html>
