@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Estilos css -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link id="theme" rel="stylesheet" type="text/css" href="/css/blue.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">
 
     <!-- JQuery UI -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
 
     <!-- plugin validación -->
-    
+
 
     <title>Proyecto con JavaScript</title>
 </head>
@@ -50,24 +50,31 @@
             <div id="box">
                 <!-- Formulario de contacto -->
                 <h2>Contacto</h2>
-                <form action="" id="formContac" method="post">
+                <form action="#" id="formContac" method="post">
                     <label for="name">Nombres</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" autocomplete="given-name">
+
                     <label for="surName">Apellidos</label>
-                    <input type="text" name="surName" id="surName">
+                    <input type="text" name="surName" id="surName" autocomplete="family-name">
+
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                    <input type="email" name="email" id="email" autocomplete="email">
+
                     <label for="sex">Sexo</label>
                     <select name="sex" id="sex">
                         <option value="men">Hombre</option>
                         <option value="woman">Mujer</option>
                     </select>
+
                     <label for="date">Fecha de Nacimiento</label>
-                    <input type="text" name="date" id="date">
+                    <input type="date" name="date" id="date" autocomplete="bday">
+
                     <label for="years">Edad</label>
-                    <input type="number" name="years" id="years">
+                    <input type="number" name="years" id="years" autocomplete="age">
+
                     <input type="submit" name="enviar" id="submit">
                 </form>
+
             </div>
             <aside id="aside">
                 <div id="about">

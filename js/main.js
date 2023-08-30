@@ -129,4 +129,62 @@ $(document).ready(function () {
 
     }
 
+    //validador de formulario
+    if (window.location.href.indexOf('formContac') > -1) {
+
+        $.validator.addMethod("terminaPor", function(value, element, parameter){
+
+            if(value.endsWith(parameter)){
+                return true;
+            }
+
+        }, "Debe terminar por {0}");
+
+        $("#formContac").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3,
+                    maxlength: 30
+                },
+                surName: {
+                    required: true,
+                    minlength: 3,
+                    maxlength: 30
+                },
+                email: {
+                    required: true,
+                    email: true,
+                    terminaPor: ".com"
+                },
+                sex: {
+                    required: true
+                },
+                date: {
+                    required: true
+                },
+                years: {
+                    required: true,
+                    number: true
+                }
+            },
+        });
+
+        $("#submit").click(function () {
+            if ($("#formContac").valid() == false) {
+                return;
+            }
+
+            let nombre = $("#name").val();
+            let apellido = $("#surName").val();
+            let email = $("#email").val();
+            let edad = $("#years").val();
+
+            console.log(nombre); // Ahora las variables son accesibles en este ámbito
+            console.log(apellido);
+            console.log(email);
+            console.log(edad);
+        });
+    }
+
 });
