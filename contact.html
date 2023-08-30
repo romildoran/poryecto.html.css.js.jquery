@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos css -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="/css/blue.css">
+
+    <!-- JQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
+
+    <!-- plugin validación -->
+    <script src="/js/jquery-validation-1.19.5/package.json"></script>
+
+    <title>Proyecto con JavaScript</title>
+</head>
+
+<body>
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+    <section id="global">
+        <header>
+            <div id="logo">
+                PROYECTO JS
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="/index.html">INICIO</a></li>
+                    <li><a href="/reloj.html">RELOJ</a></li>
+                    <li><a href="/about.html">SOBRE MI</a></li>
+                    <li><a href="#">JUEGO CHAPUZA</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+        <section id="content">
+            <div id="box">
+                <!-- Formulario de contacto -->
+                <h2>Contacto</h2>
+                <form action="" id="formContac" method="post">
+                    <label for="name">Nombres</label>
+                    <input type="text" name="name" id="name">
+                    <label for="surName">Apellidos</label>
+                    <input type="text" name="surName" id="surName">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <label for="sex">Sexo</label>
+                    <select name="sex" id="sex">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+                    <label for="date">Fecha de Nacimiento</label>
+                    <input type="text" name="date" id="date">
+                    <label for="years">Edad</label>
+                    <input type="number" name="years" id="years">
+                    <input type="submit" name="enviar" id="submit">
+                </form>
+            </div>
+            <aside id="aside">
+                <div id="about">
+                    <h4><span>Quien soy?</span></h4>
+                    <img src="/img/caracol.jpg" alt="">
+                    <p>
+                        El caracol cibernético: navegando con paciencia a través de los cables de la red, explorando un
+                        mundo de información a su propio ritmo.
+                    </p>
+                </div>
+                <div id="login">
+                    <h4>
+                        <span>¿Quién eres?</span>
+                        <form id="form">
+                            <label for="nm">Nombre</label>
+                            <input type="text" name="name" id="nm" autocomplete="on">
+                            <label for="mail">Correo electrónico</label>
+                            <input type="text" name="email" id="mail" autocomplete="on">
+                            <label for="pass">Contraseña</label>
+                            <input type="password" name="password" id="pass">
+                            <input type="submit" value="Entrar">
+                        </form>
+                    </h4>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </section>
+    <footer>
+        Curso de JavaScript
+        <a class="subir" href="#">Ir arriba</a>
+    </footer>
+    <script type="text/JavaScript" src="/js/main.js"></script>
+
+
+</body>
+
+</html>

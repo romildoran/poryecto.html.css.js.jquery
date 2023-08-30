@@ -146,7 +146,9 @@ form *:not([type="submit"]) {
 
 form input[type="text"],
 form input[type="password"],
-form input[type="email"] {
+form input[type="email"],
+form input[type="number"],
+select {
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -214,24 +216,24 @@ footer {
     background: #1f87c4;
 }
 
-.subir{
+.subir {
     color: white;
     text-decoration: none;
     display: block;
     float: right;
 }
 
-#box{
+#box {
     width: 60%;
     float: left;
     margin-top: 40px;
 }
 
-#acordeon{
+#acordeon {
     margin-top: 20px;
 }
 
-#reloj{
+#reloj {
     font-size: 30px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -240,4 +242,16 @@ footer {
     width: 30%;
     padding: 30px;
     margin: 0 auto;
+}
+
+#forContac {
+    width: 50%;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#forContac label {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
 }
